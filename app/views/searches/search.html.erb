@@ -1,0 +1,7 @@
+<% if @model == 'user' %>
+	<h3>Users search for "<%= @value %>"</h3>
+  <%= render 'users/index', users: @datas %>
+<% elsif @model == 'book' %>
+	<h3>Books search for "<%= @value %>"</h3>
+  <%= render 'books/index', books: @datas %>
+<% end %>
